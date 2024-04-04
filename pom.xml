@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
-    <description>The RedocmxClient is a client for interacting with the redoc.mx REST API to convert CFDIs (Comprobante Fiscal Digital por Internet) to PDFs.</description>
+    <description>Conversión de CFDI a PDF.</description>
     <url>https://redoc.mx</url>
 
     <licenses>
