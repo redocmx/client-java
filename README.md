@@ -42,19 +42,19 @@ You can load the CFDI data from a file or directly from a string. Below is an ex
 
 ```java
 try {
-        Cfdi cfdi = redoc.cfdi().fromFile("./cfdi.xml");
-
-        Pdf pdf = cfdi.toPdf();
-        saveBufferToFile(pdf.toBuffer(), "./result.pdf");
-
-        System.out.println("Transaction ID: " + pdf.getTransactionId());
-        System.out.println("Total pages: " + pdf.getTotalPages());
-        System.out.println("Total time MS: " + pdf.getTotalTimeMs());
-        System.out.println("Metadata: " + pdf.getMetadata());
-
-        } catch (Exception e) {
-        throw new RuntimeException(e);
-        }
+    Cfdi cfdi = redoc.cfdi().fromFile("./cfdi.xml");
+    
+    Pdf pdf = cfdi.toPdf();
+    saveBufferToFile(pdf.toBuffer(), "./result.pdf");
+    
+    System.out.println("Transaction ID: " + pdf.getTransactionId());
+    System.out.println("Total pages: " + pdf.getTotalPages());
+    System.out.println("Total time MS: " + pdf.getTotalTimeMs());
+    System.out.println("Metadata: " + pdf.getMetadata());
+    
+} catch (Exception e) {
+    throw new RuntimeException(e);
+}
 ```
 
 ## Examples
