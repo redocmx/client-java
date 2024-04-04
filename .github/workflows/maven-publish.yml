@@ -34,12 +34,9 @@ jobs:
 
       - name: Build and publish to OSSRH
         run: |
-          mvn -B -U \
-            -Pci-cd \
-            release:prepare release:perform \
-            -DskipTests \
-            -Dgpg.passphrase=${{ secrets.MAVEN_GPG_PASSPHRASE }} \
-            -DossrhUsername=${{ secrets.MAVEN_OSSRH_USERNAME }} \
-            -DossrhPassword=${{ secrets.MAVEN_OSSRH_PASSWORD }}
+          mvn deploy -Pci-cd -DskipTests \
+          -Dgpg.passphrase=${{ secrets.MAVEN_GPG_PASSPHRASE }} \
+          -DossrhUsername=${{ secrets.MAVEN_OSSRH_USERNAME }} \
+          -DossrhPassword=${{ secrets.MAVEN_OSSRH_PASSWORD }}
         env:
           GPG_EXECUTABLE: gpg
