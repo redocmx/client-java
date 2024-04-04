@@ -29,9 +29,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/redocmx/cliente-java.git</connection>
-        <url>https://github.com/redocmx/cliente-java.git</url>
-        <developerConnection>scm:git:https://github.com/redocmx/cliente-java.git</developerConnection>
+        <connection>scm:git:https://github.com/redocmx/client-java.git</connection>
+        <url>https://github.com/redocmx/client-java.git</url>
+        <developerConnection>scm:git:https://github.com/redocmx/client-java.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
