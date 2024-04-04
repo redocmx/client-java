@@ -6,7 +6,7 @@
 
     <groupId>mx.redoc</groupId>
     <artifactId>RedocClient</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Conversión de CFDI a PDF.</description>
