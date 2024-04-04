@@ -20,6 +20,11 @@ jobs:
           distribution: 'adopt'
           cache: maven
 
+      - name: Configure Git identity
+        run: |
+          git config --local user.name "redocmx automated deployment"
+          git config --local user.email "soporte@redoc.mx"
+
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v3
         with:
