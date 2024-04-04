@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 /**
  * This class represents the content of a file along with its type.

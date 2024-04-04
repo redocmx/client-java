@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 import java.nio.charset.StandardCharsets;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 /**
  * This class represents a client for interacting with the Redoc service.

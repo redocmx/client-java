@@ -23,8 +23,8 @@ jobs:
       - name: Import GPG key
         uses: crazy-max/ghaction-import-gpg@v3
         with:
-          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          gpg-private-key: ${{ secrets.MAVEN_GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
 
       - name: Build and publish to OSSRH
         run: |
@@ -35,9 +35,9 @@ jobs:
             javadoc:jar \
             source:jar \
             -DskipTests \
-            -Dgpg.passphrase=${{ secrets.GPG_PASSPHRASE }} \
-            -DossrhUsername=${{ secrets.OSSRH_USERNAME }} \
-            -DossrhPassword=${{ secrets.OSSRH_PASSWORD }}
+            -Dgpg.passphrase=${{ secrets.MAVEN_GPG_PASSPHRASE }} \
+            -DossrhUsername=${{ secrets.MAVEN_OSSRH_USERNAME }} \
+            -DossrhPassword=${{ secrets.MAVEN_OSSRH_PASSWORD }}
             deploy
         env:
           GPG_EXECUTABLE: gpg

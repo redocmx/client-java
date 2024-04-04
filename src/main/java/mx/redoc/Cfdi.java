@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.redocmx;
+package mx.redoc;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
